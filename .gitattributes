@@ -5,10 +5,10 @@
 /Makefile.am -text
 /NEWS -text
 /README -text
-/apertium-mak.mak.acx -text
-/apertium-mak.mak.dix -text
-/apertium-mak.mak.rlx -text
-/apertium-mak.pc.in -text
+/apertium-mkd.mkd.acx -text
+/apertium-mkd.mkd.dix -text
+/apertium-mkd.mkd.rlx -text
+/apertium-mkd.pc.in -text
 /autogen.sh -text
 /configure.ac -text
 /modes.xml -text
