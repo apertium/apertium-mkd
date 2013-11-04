@@ -1,10 +1,10 @@
 ###############################################################################
-## Makefile for apertium-mak
+## Makefile for apertium-mkd
 ###############################################################################
 
 RELEASE=0.1
 VERSION=0.1.0
-LANG1=mak
+LANG1=mkd
 BASENAME=apertium-$(LANG1)
 
 TARGETS_COMMON = $(LANG1).automorf.bin $(LANG1).autogen.bin \
@@ -45,13 +45,13 @@ EXTRA_DIST=$(BASENAME).$(LANG1).dix \
 ## Installation stuff
 ###############################################################################
 #
-#   apertium_mak_libdir: This is where the compiled binaries go
-#   apertium_mak_srcdir: This is where the source files go
+#   apertium_mkd_libdir: This is where the compiled binaries go
+#   apertium_mkd_srcdir: This is where the source files go
 
-apertium_makdir=$(prefix)/lib/apertium/$(BASENAME)/
-apertium_mak_srcdir=$(prefix)/share/apertium/$(BASENAME)/
+apertium_mkddir=$(prefix)/lib/apertium/$(BASENAME)/
+apertium_mkd_srcdir=$(prefix)/share/apertium/$(BASENAME)/
 
-apertium_mak_DATA=$(TARGETS_COMMON)
+apertium_mkd_DATA=$(TARGETS_COMMON)
 
 pkgconfigdir = $(libdir)/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
@@ -65,9 +65,9 @@ modes/$(LANG1)-morph.mode: modes.xml
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local:
-	test -d $(DESTDIR)$(apertium_mak_srcdir) || mkdir -p $(DESTDIR)$(apertium_mak_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_mak_srcdir)
-	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_mak_srcdir)
+	test -d $(DESTDIR)$(apertium_mkd_srcdir) || mkdir -p $(DESTDIR)$(apertium_mkd_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).dix $(DESTDIR)$(apertium_mkd_srcdir)
+	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_mkd_srcdir)
 
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
