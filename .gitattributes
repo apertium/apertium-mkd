@@ -11,6 +11,7 @@
 /apertium-mkd.pc.in -text
 /autogen.sh -text
 /configure.ac -text
+/mkd.prob -text
 /modes.xml -text
 texts/antigovernment.raw.txt -text svneol=unset#application/octet-stream
 texts/antigovernment.tagged.txt -text
