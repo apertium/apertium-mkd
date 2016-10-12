@@ -9,6 +9,7 @@
 /apertium-mkd.mkd.dix -text
 /apertium-mkd.mkd.rlx -text
 /apertium-mkd.pc.in -text
+/apertium-mkd.post-mkd.dix -text
 /autogen.sh -text
 /configure.ac -text
 /mkd.prob -text
