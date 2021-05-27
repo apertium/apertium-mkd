@@ -1,6 +1,6 @@
 AC_PREREQ(2.52)
 
-AC_INIT([Apertium Macedonian], [0.1.0], [francis.tyers@gmail.com], [apertium-mkd], [http://wiki.apertium.org/wiki/Apertium-mkd])
+AC_INIT([Apertium Macedonian], [0.1.0], [francis.tyers@gmail.com], [apertium-mkd], [https://wiki.apertium.org/wiki/Apertium-mkd])
 AM_INIT_AUTOMAKE
 
 AC_PROG_LN_S
